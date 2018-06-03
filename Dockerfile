@@ -5,5 +5,5 @@ USER root
 RUN apk update && \
     apk add nodejs && \
     apk add php7 && \
-    npm install -g grunt grunt-cli electron electron-packager
+    npm install -g grunt grunt-cli
 USER jenkins
