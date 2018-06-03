@@ -5,5 +5,5 @@ USER root
 RUN apk update && \
     apk add nodejs && \
     apk add php7 && \
-    npm install -g grunt grunt-cli
+    apk add php7-dom
 USER jenkins
