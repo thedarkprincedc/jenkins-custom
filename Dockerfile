@@ -4,7 +4,7 @@ LABEL Description="This is a jenkins docker image with nodejs, grunt, and electr
 USER root
 RUN apk update && \
     apk add nodejs && \
-    apk add php7 php7-dom php7-xml php7-curl php7-pdo php7-pdo_mysql && \
+    apk add php7 php7-dom php7-xml php7-curl php7-pdo php7-pdo_mysql php7-json php7-phar php7-iconv php7-mbstring && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 RUN curl -sSL https://phar.phpunit.de/phpunit.phar -o phpunit.phar && \
